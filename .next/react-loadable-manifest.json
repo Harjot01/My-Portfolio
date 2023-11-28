@@ -1,0 +1,20 @@
+{
+  "..\\node_modules\\next-sanity\\dist\\next-sanity.esm.js -> @sanity/groq-store": {
+    "id": "..\\node_modules\\next-sanity\\dist\\next-sanity.esm.js -> @sanity/groq-store",
+    "files": [
+      "static/chunks/node_modules_sanity_groq-store_dist_browser_groq-store_js.js"
+    ]
+  },
+  "blog\\[slug].js -> ../../components/NavBar": {
+    "id": "blog\\[slug].js -> ../../components/NavBar",
+    "files": [
+      "static/chunks/components_NavBar_js-_30171.js"
+    ]
+  },
+  "index.js -> ../components/NavBar": {
+    "id": "index.js -> ../components/NavBar",
+    "files": [
+      "static/chunks/components_NavBar_js-_30170.js"
+    ]
+  }
+}

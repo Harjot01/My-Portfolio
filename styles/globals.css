@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("Fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "CustomFont2";
+    src: url("Fonts/JosefinSans-MediumItalic.ttf");
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 96%;
+}
+
+.nav_bar {
+    font-family: CustomFont;
+}
+
+h2 {
+    color: rgb(85 64 175);
+    font-weight: 600;
+    font-family: CustomFont;
+    padding-top: 4rem;
+}
+
+h4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-family: Raleway, sans-serif;
+}
+
+#loadMore {
+    width: 200px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #7e22ce;
+    transition: .3s;
+}
+
+#loadMore:hover {
+    color: #7e22ce;
+    background-color: #fff;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+
+.header {
+    color: hsl(0, 0%, 28%);
+    font-size: 30px;
+    font-family: "CustomFont2";
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.header {
+    padding: 12px;
+    background: linear-gradient(to right, hsl(0, 0%, 100%) 0, hsl(0, 0%, 100%) 10%, hsl(251, 46%, 47%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite ease-in-out;
+    /* animation-iteration-count: 3; */
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0px;
+    }
+
+    50% {
+        background-position: 700px;
+    }
+
+    100% {
+        background-position: 1400px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        font-size: 20px;
+        animation: shine 20s infinite ease-in-out;
+    }
+
+    @keyframes shine {
+        0% {
+            background-position: 0px;
+        }
+
+        50% {
+            background-position: 700px;
+        }
+
+        100% {
+            background-position: 950px;
+        }
+    }
+}
+
+.my-12 {
+    margin-top: -2rem;
+}
+
+.items-start{
+    align-items: center;
+}
